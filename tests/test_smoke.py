@@ -1,6 +1,13 @@
 """验证就业追踪服务的基础入口和统计工具。"""
 
+import os
 import unittest
+
+# 在任何被测模块导入前切换到独立测试库，避免测试触碰开发数据库
+os.environ.setdefault(
+    "DATABASE_URL",
+    "sqlite:///" + os.path.join(os.path.dirname(os.path.abspath(__file__)), ".test_gradtrack.db"),
+)
 
 from main import app
 from app.services.cohort_scope import CohortMember, CohortRule, apply_cohort_rule

@@ -14,8 +14,10 @@ data/*.db-journal
 data/*.mv.db
 data/*.trace.db
 venv/
+.venv/
 __pycache__/
 *.pyc
 .mypy_cache/
+tests/.test_gradtrack.db
 vendor/
 .phpunit.result.cache

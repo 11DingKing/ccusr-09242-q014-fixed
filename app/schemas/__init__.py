@@ -54,6 +54,22 @@ from .profile import (
     MicroMajorProfile,
     CollegeProfile,
 )
+from .verification import (
+    EnqueueRequest,
+    ClaimRequest,
+    RenewRequest,
+    TransferRequest,
+    ReturnSupplementRequest,
+    SupplementReceivedRequest,
+    SupplementBatchRequest,
+    CompleteRequest,
+    VerificationEventOut,
+    VerificationTaskOut,
+    ClaimResponse,
+    BatchSupplementResult,
+    ClockAdvanceRequest,
+    ClockOut,
+)
 
 __all__ = [
     "BaseSchema",
@@ -104,4 +120,18 @@ __all__ = [
     "KeyIndicatorsComparison",
     "MicroMajorProfile",
     "CollegeProfile",
+    "EnqueueRequest",
+    "ClaimRequest",
+    "RenewRequest",
+    "TransferRequest",
+    "ReturnSupplementRequest",
+    "SupplementReceivedRequest",
+    "SupplementBatchRequest",
+    "CompleteRequest",
+    "VerificationEventOut",
+    "VerificationTaskOut",
+    "ClaimResponse",
+    "BatchSupplementResult",
+    "ClockAdvanceRequest",
+    "ClockOut",
 ]

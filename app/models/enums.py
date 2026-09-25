@@ -54,6 +54,28 @@ class WarningStatus(str, enum.Enum):
     DISMISSED = "已忽略"
 
 
+class RiskLevel(str, enum.Enum):
+    HIGH = "高风险"
+    NORMAL = "普通"
+
+
+class VerificationStatus(str, enum.Enum):
+    QUEUED = "待领取"
+    CLAIMED = "核验中"
+    WAITING_SUPPLEMENT = "待补件"
+    COMPLETED = "已完成"
+
+
+class VerificationAction(str, enum.Enum):
+    ENQUEUE = "入队"
+    CLAIM = "领取"
+    RENEW = "续租"
+    TRANSFER = "转交"
+    RETURN_SUPPLEMENT = "退回补件"
+    SUPPLEMENT_RECEIVED = "补件到位"
+    COMPLETE = "完成"
+
+
 INDUSTRIES = [
     "信息技术",
     "金融",
