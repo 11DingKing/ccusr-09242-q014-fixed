@@ -3,6 +3,7 @@
 from .cohort_scope import CohortMember, CohortRule, apply_cohort_rule, compare_cohorts
 from .report_snapshot import ReportSnapshot, SnapshotStore, build_snapshot
 from .workflow_rules import Action, CaseState, WorkflowDecision, decide_action
+from . import verification_queue
 
 __all__ = [
     "Action",
@@ -16,4 +17,5 @@ __all__ = [
     "build_snapshot",
     "compare_cohorts",
     "decide_action",
+    "verification_queue",
 ]

@@ -54,6 +54,33 @@ class WarningStatus(str, enum.Enum):
     DISMISSED = "已忽略"
 
 
+class RiskLevel(str, enum.Enum):
+    HIGH = "高风险"
+    NORMAL = "普通"
+
+
+class QueueState(str, enum.Enum):
+    QUEUED = "待领取"
+    CLAIMED = "核验中"
+    WAITING_MATERIAL = "待补件"
+    COMPLETED = "已完成"
+
+
+class QueueAction(str, enum.Enum):
+    ENQUEUE = "入队"
+    CLAIM = "领取"
+    RENEW = "续租"
+    TRANSFER = "转交"
+    RETURN = "退回补件"
+    RESUBMIT = "补件完成"
+    COMPLETE = "完成"
+
+
+class MaterialStatus(str, enum.Enum):
+    COMPLETE = "材料齐全"
+    INCOMPLETE = "材料不完整"
+
+
 INDUSTRIES = [
     "信息技术",
     "金融",

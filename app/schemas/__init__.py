@@ -54,6 +54,19 @@ from .profile import (
     MicroMajorProfile,
     CollegeProfile,
 )
+from .verification import (
+    EnqueueRequest,
+    ClaimRequest,
+    LeaseActionRequest,
+    TransferRequest,
+    CompleteRequest,
+    BatchResubmitRequest,
+    VerificationItemSchema,
+    ClaimResponse,
+    BatchResubmitResponse,
+    VerificationEventSchema,
+    ClockResponse,
+)
 
 __all__ = [
     "BaseSchema",
@@ -104,4 +117,15 @@ __all__ = [
     "KeyIndicatorsComparison",
     "MicroMajorProfile",
     "CollegeProfile",
+    "EnqueueRequest",
+    "ClaimRequest",
+    "LeaseActionRequest",
+    "TransferRequest",
+    "CompleteRequest",
+    "BatchResubmitRequest",
+    "VerificationItemSchema",
+    "ClaimResponse",
+    "BatchResubmitResponse",
+    "VerificationEventSchema",
+    "ClockResponse",
 ]
